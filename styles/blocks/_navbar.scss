@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color:  $bg-color-purple;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__img{
+        max-width: 120px;
+    }
+    
+    &__burguer{
+        max-width: 20px;
+    }
+
+}
