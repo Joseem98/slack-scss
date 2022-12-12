@@ -20,21 +20,27 @@
         color: $bg-color-white;
         text-align: center;
         font-size: 10pt;
+        margin-bottom: 50px;
     }
 
     &__method {
         &--email {
-            @include buttonElement($full_width, $bg-color-purple);
-            @include font-face("poppinsbold")
-            
+            @include buttonElement($full_width);
+            background-color: $bg-color-white;     
+            margin-top: 10px       
+        }
+        &--google {
+            @include buttonElement($full_width);
+            background-color: #4285F4;
+            margin-top: 10px;
         }
     }
-
     
-    &__img
+    &__img {
         &--img{
             max-width: 500px;
             margin-left: -350px;
             margin-top: 200px;
         }
     }
+}

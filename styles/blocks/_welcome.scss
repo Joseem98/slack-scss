@@ -1,0 +1,38 @@
+@import "../utilities/colors";
+@import "../utilities/normalizer";
+@import "../utilities/mixin";
+
+@font-face {
+    font-family: poppinsbold;
+    src: url(../utilities/Poppins/Poppins-SemiBold.ttf);
+}
+
+.welcome {
+    background-color: $bg-color-purple;
+    height: 360px;
+    padding: 20px;
+    clip-path: ellipse(105% 100% at center top);
+
+    &__h2 {
+        color: white;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__input {
+        
+        &--free {
+            @include buttonElement($full_width);
+            color: $bg-color-purple;
+            margin-bottom: 10px;
+            font-family: poppinsbold;
+        }
+
+        &--team {
+            @include buttonElement($full_width);
+            background-color: $bg-color-purple;
+            color: white;
+        }
+    }
+}

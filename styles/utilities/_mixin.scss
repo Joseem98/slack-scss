@@ -1,26 +1,10 @@
 @import "./colors";
 @import "./sizes";
+@import "../utilities/normalizer";
 
-@mixin buttonElement($full_width, $bg-color-purple){
+@mixin buttonElement($full_width){
     width: $full_width;
-    height: 55px;
-    color: $bg-color-purple;
+    height: 55px;;
     font-family: poppinsbold;
-    border-style: none;
     border-radius: 5px;
-}
-
-@font-face {
-    font-family: poppins;
-    src: url(./styles/utilities/Poppins/Poppins-Regular.ttf);
-}
-
-@font-face {
-    font-family: poppinsbold;
-    src: url(./styles/utilities/Poppins/Poppins-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: poppinsblack;
-    src: url(./styles/utilities/Poppins/Poppins-Bold.ttf);
 }

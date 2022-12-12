@@ -1,0 +1,80 @@
+@import "../utilities/colors";
+@import "../utilities/normalizer";
+
+.info {
+    background-color: $bg-color-cream;
+    height: 2600px;
+    width: 100%;
+
+    &__empresas {
+        &--p {
+            font-family: poppinsbold;
+            text-align: center;
+            padding: 50px;
+            padding-bottom: 20px;
+        }
+
+        &--ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            list-style: none;
+            margin: 30px;
+        }
+
+        &--img1 {
+            max-width: 150px;
+        }
+        &--img2 {
+            max-width: 60px;
+        }
+        &--img3 {
+            max-width: 100px;
+        }
+        &--img4 {
+            max-width: 50px;
+        }
+        &--img5 {
+            max-width: 250px;
+        }
+        &--img6 {
+            max-width: 90px;
+        }
+    }
+
+    &__img {
+        margin-left: -5px;
+        margin-top: 20px;
+    }
+
+    &__equipo {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+
+        &--p {
+            font-family: poppinsbold;
+            margin-top: 20px;
+        }
+
+        &--a {
+            text-decoration: none;
+        }
+
+        &-- img {
+            margin-top: 80px;
+            margin-left: 45px;
+            margin-bottom: 40px;
+        }
+
+        &--img2 {
+            margin-top: 80px;
+            margin-left: -20px;
+            margin-bottom: 40px;
+        }
+    }
+
+}
+

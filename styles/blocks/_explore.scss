@@ -1,0 +1,27 @@
+@import "../utilities/colors";
+@import "../utilities/normalizer";
+@import "../utilities/mixin";
+
+.explore {
+    background-color: $bg-color-cream;
+    height: 600px;
+    padding-top: 40px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    &__box {
+        background-color: $bg-color-white;
+        width: 280px;
+        height: 350px;
+        padding: 12px;
+        position: absolute;
+        top : 50%; 
+        left : 50%;
+        transform : translate(-50%, -50%);
+
+        &--a {
+            margin-top: 50px;
+        }
+    }
+}

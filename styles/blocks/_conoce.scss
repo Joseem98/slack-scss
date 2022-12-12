@@ -1,0 +1,73 @@
+@import "../utilities/colors";
+@import "../utilities/normalizer";
+@import "../utilities/mixin";
+
+.conoce {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 140px;
+    height: 1900px;
+
+    &__h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__p {
+        text-align: center;
+    }
+
+    &__button1 {
+        @include buttonElement($full_width);
+        background-color: $bg-color-purple;     
+        margin-top: 10px;
+        border-style: none;
+        margin-bottom: 10px;
+    }
+
+    &__button2 {
+        @include buttonElement($full_width);
+        background-color: $bg-color-white;
+        color: #541554;
+        margin-bottom: 60px;
+        border-color: #541554 1px;
+        border-radius: 5px;
+    }
+
+    &__porcentajes {
+        width: 200px;
+        margin: 0 auto;
+
+        &--por {
+            text-align: center;
+            font-size: 34pt;
+            color:#541554;
+            font-family: poppinsblack;
+            padding-top: 30px;
+        }
+
+        &--text {
+            font-size: 10pt;
+            text-align: center;
+        }
+    }
+
+    &__video {
+        margin-top: 100px;
+        width: 100%;
+        align-items: center;
+
+        &--vid {
+            object-fit: fill;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &--subtitle {
+            font-size: 9pt;
+            text-align: center;
+        }
+    }
+    
+}
+
